@@ -28,22 +28,29 @@ Doctrine & Covenants 76
    </style>
    <p style="font-size: 60px;" id="random-name"></p>
 
-   <script src="NC.js"></script>
-   
-   <script>
-        const randomNameElement = document.getElementById("random-name");
-        randomNameElement.innerHTML= generateName();
-    </script>
+<script src="NC.js"></script>
+
+<script>
+    const randomNameElement = document.getElementById("random-name");
+    randomNameElement.innerHTML = generateName();
+</script>
 
 <ul>
     <li>Book of Mormon references Him every 1.7 verses!</li> 
     <li>LDS KJV Holy Bible references Him every 0.32 verses! </li>  
-   </ul>
+</ul>
 <br>
-<button onclick="location.reload()">New Name</button>
-<br>
-<br>
+<button id="generate-button">New Name</button>
 
+<script>
+    const generateButton = document.getElementById("generate-button");
+
+    generateButton.addEventListener("click", () => {
+        location.reload();
+    });
+</script>
+<br>
+<br>
 
 "Just as Jesus knows each of us by name, one way we can come to better know Jesus is by learning His many names. Like the names of Israel and Peter, many of Jesus’s names are titles that help us understand His mission, purpose, character, and attributes. As we come to know Jesus’s many names, we will come to better understand His divine mission and His selfless character. Knowing His many names also inspires us to become more like Him—to develop Christlike attributes that bring joy and purpose to our lives." -Elder Schmitt Oct 2022 Conference
 
